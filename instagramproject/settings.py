@@ -25,7 +25,7 @@ SECRET_KEY = 'oz+foc)-@v60h2-mum&!7w(k_ey#lkq0n2ljylvbviz==!@k+t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ explorin.io]
+ALLOWED_HOSTS = [ 'jai22-iitr.explorin.io' ]
 
 
 # Application definition
