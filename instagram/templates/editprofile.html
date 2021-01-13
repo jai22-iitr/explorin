@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-image: linear-gradient(to right, #833ab4 , #fd1d1d , #fcb045);">
+	<center>
+	{%block content%}
+	<div style="border:solid 2px; width: 600px; height: 500px;">
+	<img src="https://assets.stickpng.com/images/5a4e432a2da5ad73df7efe7a.png" height="100px;"><br>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Circle-icons-profile.svg/1200px-Circle-icons-profile.svg.png" height="150px;">
+		<form action="" method="POST">
+			{% csrf_token %}
+			<br>
+			<div style="font-size: 30px; color: white;">EDIT YOUR USERNAME HERE.</div>
+			<input type="text" name="name" maxlength="300" id="id_name" placeholder="Username" style="font-size: 25px;">
+			<input type="submit" name="" value="Change" style="font-size: 25px; margin-top: 50px ; border-radius: 20px; border:0px; background-color: #00a8ff; color: white; ">
+		</form>
+		<p>***************************************************************</p>
+	</div>
+	{% endblock %}
+	</center>
+</body>
+</html>
+		

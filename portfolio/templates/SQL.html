@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mysql codes</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#container1").click(function(){
+				$("#subcontainer1").slideToggle("slow")
+			});
+		});
+	</script>
+</head>
+<body style="background-color: #eb2f06">
+	<center>
+		<div class="mastercontainer1" style="font-size: 50px;"> <b>My SQL DATABASE.</b></div>
+		<div id="container1" style="background-color: yellow ; text-align: center; padding:5px;border: solid 3px #c3c3c3;">CLICK HERE TO SEE MY DATABASE</div>
+		<div id="subcontainer1" style="background-color: skyblue;
+		text-align: center;padding: 40px; border: solid 3px #c3c3c3; display: none;"><img src="2nd.jpg" width="650" height="600" style="border:6px solid white;">
+	    </div>
+    </center>
+</body>
+</html>

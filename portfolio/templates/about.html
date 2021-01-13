@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DAY 11 HTML</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#container1").click(function(){
+				$("#subcontainer1").slideToggle("slow");
+			});
+			$("#container2").click(function(){
+				$("#subcontainer2").slideToggle("slow");
+			});
+			$("#container3").click(function(){
+				$("#subcontainer3").slideToggle("slow");
+			});
+			$("#container4").click(function(){
+				$("#subcontainer4").slideToggle("slow");
+			});
+			$("#container5").click(function(){
+				$("#subcontainer5").slideToggle("slow");
+			});
+		});
+	</script>
+	</head>
+	<body style ="background-image:url({% static './2.jpg' %}); background-repeat: no-repeat center center fixed ; background-size: cover; ">
+		<div class="supercontainer1">
+			<div class="block3" style="text-align: center;">
+				<img src="{% static './jai22.jpeg' %}" style=" border-radius:600px; height: 200px; width: 200px; border:solid 3px; margin-top: 100;">
+			</div>
+
+		<div id="container1" style="background-color:white ; text-align: center; padding:5px;border: solid 3px #535c68;"><b>INTRODUCTION</b></div>
+		<div id="subcontainer1" style="background-color: #eb4d4b;
+		text-align: center;padding: 40px; border: solid 3px #c3c3c3; display: none;">HEY EVERYONE , JAI HERE , I am student of 1st Year AT IIT R MIED department.</div>
+		<div id="container2" style="background-color:white; text-align: center; padding:5px;border: solid 3px #535c68;"><b>EDUCATION</b></div>
+		<div id="subcontainer2" style="background-color:#747d8c;
+		text-align: center;padding: 20px; border: solid 3px #c3c3c3; display: none;">
+			<table style="text-align: center;background-color: white; border: solid 2px; margin: 0px auto;margin-top: 3%;">
+				<thead style="text-align: center;background-color: yellow;border: solid 1px;">
+					<th>CLASS</th>
+					<th>BOARD / UNIVERSITY NAME</th>
+					<th>MARKS/CGPA</th>
+				</thead>
+				<tr style="text-align: center;background-color: yellow;border: solid 1px;">
+					<td>X</td>
+					<td>CBSE</td>
+					<td>94%</td>
+				</tr>
+				<tr style="text-align: center;background-color: yellow;border: solid 1px;">
+					<td>XII</td>
+					<td>CBSE</td>
+					<td>90%</td>
+				</tr>
+				<tr style="text-align: center;background-color: yellow;border: solid 1px;">
+					<td>B.TECH</td>
+					<td>IIT ROORKEE</td>
+					<td>9</td>
+				</tr>
+			</table>
+		</div>
+		<div id="container3" style="background-color: white; text-align: center; padding:5px;border: solid 3px #535c68;"><b>REASONS TO JOIN</b></div>
+		<div id="subcontainer3" style="background-color: #ff7f50 ;
+		text-align: center;padding: 20px; border: solid 3px #c3c3c3; display: none;">
+		<p style="text-align: center";>
+	My reasons to join explorin club was just that as it was advised to me by our seniors to just explore every fiels in 1st year of college and it was my first step towards exploration.....</p>
+        </div>
+        <div id="container4" style="background-color: white; text-align: center; padding:5px;border: solid 3px #535c68;"><b>JOURNEY TILL NOW</b></div>
+        <div id="subcontainer4" style="background-color: #badc58;
+		text-align: center;padding: 20px; border: solid 3px #c3c3c3; display: none;">
+		<p style="text-align: center;"> I am feeling myself to be too much priviliged to be a member of EXPLORIN club as this club has helped me a lot to explore myself not only in the field of software development but also in my personal life as it has made me realise my capacity that .... ya i am able to handle several things together at that same time so i am thankful to explorin chub and its team members as this was my first step towards exploration and i have no doubt in saying that ya it was worth it. </p>
+        </div>
+        <div id="container5" style="background-color: white; text-align: center; padding:5px;border: solid 3px #535c68;"><b>TECHNOLOGIES LEARNT</b></div>
+        <div id="subcontainer5" style="background-color: #ff6b81;
+		text-align: center;padding: 20px; border: solid 3px #c3c3c3; display: none;">
+		<ul style="text-align: center;">
+			<li><b>HTML</b></li>
+			<li><b>CSS</b></li>
+			<li><b>JAVASCRIPT</b></li>
+			<li><b>MySQL</b></li>
+			<li><b>Jquery</b></li>
+			<li><b>Php</b></li>
+			<li><b>AJAX</b></li>
+			<li><b>Python</b></li>
+			<li><b>Django</b></li>
+		</ul>
+        </div>
+<div class="iitr" style="display: flex;
+		justify-content: center;
+		background-color: #ffe9c9;">
+<div class="gallery" style="margin:6px;
+	border:4px solid #ccc;
+	float:left;
+	width:300px;text-align: center;">
+		<img src="https://tse2.mm.bing.net/th?id=OIP.JKWyCgQG1Sacr0CVqUj06AHaDY&pid=Api&P=0&w=363&h=167" width="300" height="250">
+</div>
+
+<div class="gallery"  style="margin:6px;
+	border:4px solid #ccc;
+	float:left;
+	width:300px; text-align: center;">
+		<img src="https://static.platzi.com/media/user_upload/F-B2-9f9c6b1c-b13c-4d87-9573-f5e26e8ca989.jpg" width="300" height="250">
+</div>
+<div class="gallery" style="margin:6px;
+	border:4px solid #ccc;
+	float:left;
+	width:300px;text-align: center;">
+		<img src="https://qph.fs.quoracdn.net/main-qimg-c02d737b627c8346adddd33fbcfb442e" width="300" height="250">
+</div>
+</div>
+</div>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>trial</title>
+	<link rel="stylesheet" href="csstrial.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".one").hover(function(){
+				$(".two").css("background-color","green");
+				$(".one").css("background-color","blue");
+			},
+			function(){
+				$(".one").css("background-color","green");
+				$(".two").css("background-color","blue");
+			});
+			$(".two").hover(function(){
+				$(".two").css("background-color","green");
+				$(".one").css("background-color","blue");
+			},
+			function(){
+				$(".one").css("background-color","green");
+				$(".two").css("background-color","blue");
+			});
+			$(".five").click(function(){
+      			$("#you").hide()
+      			var newImage = $('<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQeTAbq4tQEzQUp7UNp18evjdPPGpj16mEkg&usqp=CAU" alt="Symbol" width="100%" height="100%">');
+      			$(".five").append(newImage);
+      		});
+      		$(".header").click(function(){
+      			$("#me").hide()
+      			$(".three").append("HELLO!");
+      		});
+		});
+	</script>
+	<style>
+		body{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	width: 80%;
+	margin:auto auto;
+}
+.master{
+	display:flex;
+	flex-direction: column;
+	height: 100%;
+	margin-top: 30px;
+}
+.header{
+	height: 20vh;
+}
+.footer{
+	height: 20vh;
+}
+.containerA{
+	display:flex;
+	height: 25%;
+}
+.subcontainer1{
+	flex: 0.5;
+}
+.subcontainer2{
+	flex: 1;
+}
+.containerB{
+	display: flex;
+	height: 25%;
+}
+	</style>
+</head>
+<body>
+<div class="master">
+	<div class="header" style="background-color:yellow; margin:1px;"> Header </div>
+	<div class="containerA">
+		<div class="subcontainer1"> 
+			<div class="one" style="background-color:green; flex: 3; height: 16vh; margin:1.5px;"> Hero </div>
+			<div class="two" style="background-color:blue; flex: 1; height: 9vh; margin:1px;"> Sidebar </div>
+		</div>
+		<div class="subcontainer2">
+			<div class="three" style="background-color:brown; height: 13vh; margin:2.5px;"><div id="me"> Main Content</div> </div>
+			<div class="four" style="background-color:cyan; height: 12vh; margin:1px;">Extra Content </div>
+		</div>
+	</div>
+	<div class="containerB">
+		<div class="five" style="background-color:purple; flex:2; height: 25vh; margin:1px; text-align:center; overflow: hidden;"><p id="you">Related Images</p></div>
+		<div class="six" style="background-color:red; flex:1; height: 25vh; margin:1px;"> Related Posts </div>
+	</div>
+	<div class="footer" style="background-color:grey; margin:1px;"> Footer </div>
+</div>
+</body>
+</html>

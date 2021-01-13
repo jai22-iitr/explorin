@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACTS</title>
+	<style>
+		.container2{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-top: 50px;
+		}
+		.instagram{
+			display: flex;
+		}
+		.facebook{
+			display: flex;
+		}
+		.linkdin{
+			display: flex;
+		}
+		.gmail{
+			display: flex;
+		}
+	</style>
+</head>
+<body style ="background-image:url({% static './2.jpg' %}); background-repeat: no-repeat center center fixed ; background-size: cover; ">
+	<center>
+		<div class="image">
+        </div>
+    </center>
+	<div class="container1">
+	<h1 style="font-size: 50px; margin-top: 0px; text-align: center; font-style:italic;"><b>Contact</b></h1>
+	<p style="font-size:20px; text-align: center;">If you desire to contact me , you can reach me via:</p>
+	<center><img src="{% static './jai22.jpeg' %}" style=" border-radius:600px; height: 200px; width: 200px; margin-top: 30;"></center>
+	<ul style="font-size: 30px; margin-left: 560px; font-style: italic;">
+		<li><a href="https://mail.google.com/mail/u/0/#inbox">Email</a></li>
+		<li><a href="https://www.instagram.com/jai.soni22/?hl=en">Instagram</a></li>
+		<li><a href="https://www.facebook.com/profile.php?id=100056052960825">Facebook</a></li>
+		<li><a href="https://www.linkedin.com/in/jai-soni-77758b202/">Linkedin</a></li>
+	</ul>
+    </div>
+    <div class="container2">
+    	<div class="instagram">
+    		<a href="https://www.instagram.com/jai.soni22/?hl=en"><img src="https://maxcdn.icons8.com/Share/icon/win8/Logos/instagram_new1600.png" height="30px" width="30px";>
+    	</div>
+    	<div class="facebook">
+    		<a href="https://www.facebook.com/profile.php?id=100056052960825"><img src="https://cdn.iconscout.com/icon/free/png-256/facebook-238-599118.png" height="30px" width="30px";>
+    	</div>
+    	<div class="linkdin">
+    		<a href="https://www.linkedin.com/in/jai-soni-77758b202/"><img src="https://maxcdn.icons8.com/Share/icon/p1em/Logos/linkedin1600.png" height="30px" width="30px";>
+    	</div>
+    	<div class="gmail">
+    		<a href="https://mail.google.com/mail/u/0/#inbox"><img src="https://www.shareicon.net/data/2016/07/08/117666_email_512x512.png" height="30px" width="30px";>
+    	</div>
+    	<div class="twitter">
+    		<a href="https://twitter.com/Jai81062202"><img src="http://findicons.com/files/icons/2779/simple_icons/4096/twitter_4096_black.png" height="35px" width="30px";>
+    	</div>
+    	</div>
+    </div>
+</body>
+</html>
